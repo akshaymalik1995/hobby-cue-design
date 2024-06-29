@@ -4,14 +4,14 @@ import AudioIcon from "../icons/AudioIcon";
 
 export default function Player() {
   return (
-    <div className="h-[100px] rounded-sm p-8 gap-10 flex items-center bg-[#CCC1DA] ">
+    <div className="h-[100px] xl:max-w-[776px] grow rounded-sm p-8 gap-10 flex items-center bg-[#CCC1DA] ">
       <div className="bg-white flex gap-2 justify-center items-center w-10 h-10 rounded-full">
         <PlayerIcon />
       </div>
-      <div className="flex gap-4 items-center">
-        <div className="flex items-center">
+      <div className="flex grow gap-4 items-center">
+        <div className="flex grow items-center">
           <div className="w-3 h-3 bg-[#8064A2] rounded-full "></div>
-          <div className="w-[468px] h-[2px] bg-white"></div>
+          <div className="grow h-[2px] bg-white"></div>
         </div>
         <div className="text-purple text-xs">0:00</div>
       </div>

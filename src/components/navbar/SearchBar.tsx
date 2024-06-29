@@ -6,7 +6,7 @@ export default function SearchBar() {
   return (
     <div className="h-[40px] flex w-[300px]">
       <input
-        className="outline-0  p-[12px] border-[1px] border-[#EBEDF0] border-r-0 rounded-l-lg "
+        className="outline-0 text-xs  p-[12px] border-[1px] border-[#EBEDF0] border-r-0 rounded-l-lg "
         type="text"
         placeholder="Search here..."
       />

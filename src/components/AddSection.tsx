@@ -4,9 +4,9 @@ import PlusIcon from "./icons/PlusIcon";
 
 export default function AddSection() {
   return (
-    <div className="h-[484px]  ">
-      <div className="container bg-[#F7FDFF] h-full mx-auto flex justify-center items-center ">
-        <div className="w-[1240px] gap-8 flex rounded-md flex-col border-[1px] border-lightGray px-10 py-8 bg-white ">
+    <div className="bg-[#F7FDFF]">
+      <div className="py-24 px-4 container  mx-auto flex justify-center items-center ">
+        <div className="gap-8 max-w-[1240px] flex rounded-md flex-col border-[1px] border-lightGray px-10 py-8 bg-white ">
           <div className="flex gap-6">
             <div>
               <PlusIcon />

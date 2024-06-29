@@ -10,7 +10,7 @@ interface FeatureProps {
 
 export default function Feature(props: FeatureProps) {
   return (
-    <div className="flex flex-col w-[608px] border-[1px] border-lightGray rounded-md px-10 py-8 gap-6">
+    <div className="flex justify-between h-72 cursor-pointer flex-col  border-[1px] border-lightGray rounded-md px-10 py-8 gap-6">
       <div className="flex items-center gap-4">
         <div className="w-[40px] h-[40px] ">{props.icon}</div>
         <div className="text-[20px] font-semibold">{props.title}</div>

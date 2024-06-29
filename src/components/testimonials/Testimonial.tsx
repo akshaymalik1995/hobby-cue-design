@@ -5,9 +5,9 @@ import Player from "./Player";
 
 export default function Testimonial() {
   return (
-    <div className="h-[672px] w-full">
-      <div className="container h-full flex justify-center items-center mx-auto">
-        <div className="w-[1240px] rounded-md flex flex-col gap-8 px-10 py-8 bg-[#F7F5F9] ">
+    <div className="">
+      <div className="container py-24 px-4 flex justify-center items-center mx-auto">
+        <div className="rounded-md max-w-[1240px] mx-auto flex flex-col gap-8 px-10 py-8 bg-[#F7F5F9] ">
           <div className="flex gap-6">
             <div>
               <QuotesIcon />
@@ -29,7 +29,7 @@ export default function Testimonial() {
             city, all under one roof, is an excellent idea and I highly
             recommend it.
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col-reverse gap-10 xl:flex-row justify-between">
             <Player />
             <div className="flex gap-5 items-center">
               <Image

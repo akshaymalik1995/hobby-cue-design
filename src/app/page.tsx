@@ -4,15 +4,17 @@ import Features from "@/components/features/Features";
 import AddSection from "@/components/AddSection";
 import Testimonial from "@/components/testimonials/Testimonial";
 import EndSection from "@/components/end/EndSection";
+import Footer from "@/components/footer/Footer";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <HomeScreen />
       <Features />
       <AddSection />
       <Testimonial />
       <EndSection />
+      <Footer />
     </div>
   );
 }

@@ -1,12 +1,15 @@
+"use client";
 import React from "react";
-import Vector from "./Vector";
 import SignIn from "./SignIn";
+import Image from "next/image";
+import JoinIn from "./JoinIn";
 
 export default function HomeScreen() {
+  const [signIn, setSignIn] = React.useState(true);
   return (
-    <div className="h-[678px] flex relative  items-center w-full bg-[#F7F5F9] ">
-      <div className="container grid   grid-cols-2 mx-auto ">
-        <div className=" flex col-span-1   flex-col gap-8 ">
+    <div className="flex   items-center w-full bg-[#F7F5F9] ">
+      <div className="container relative px-4 pt-12 xl:py-36 gap-10 grid grid-cols-1  xl:grid-cols-2 mx-auto ">
+        <div className=" flex  col-span-1   flex-col gap-8 ">
           <h2 className="font-semibold tracking-[2%] italic text-4xl">
             Explore your <span className="text-[#0096C8]"> hobby </span> or
             <span className="text-purple"> passion</span>
@@ -23,17 +26,35 @@ export default function HomeScreen() {
             promote yourself, your students, products, services or events. Hop
             on your hobbyhorse and enjoy the ride.
           </p>
-          <Vector className="absolute w-[640px]  -bottom-2" />
         </div>
-        <div className=" col-span-1 flex justify-center items-center">
-          <div className="flex  w-[410px] flex-col gap-6">
-            <div className="flex gap-8">
-              <div className="text-purple underline underline-offset-8 text-[20px] ">
+        <div className=" col-span-1 flex gap-16 flex-col justify-center items-center">
+          <div className="flex w-full  lg:max-w-[410px] flex-col gap-6">
+            <div className="flex grow gap-8">
+              <div
+                onClick={() => setSignIn(true)}
+                className={` cursor-pointer  ${
+                  signIn
+                    ? "underline text-purple underline-offset-8"
+                    : "text-[#939CA3]"
+                }  text-[20px] `}
+              >
                 Sign In
               </div>
-              <div className="text-[20px] text-[#939CA3] ">Join In</div>
+              <div
+                onClick={() => setSignIn(false)}
+                className={`text-[20px] cursor-pointer ${
+                  !signIn
+                    ? "text-purple underline underline-offset-8"
+                    : "text-[#939CA3] "
+                } `}
+              >
+                Join In
+              </div>
             </div>
-            <SignIn />
+            {signIn ? <SignIn /> : <JoinIn />}
+          </div>
+          <div className="xl:absolute left-0 bottom-0">
+            <Image src="/vector-1.png" alt="vector" width={700} height={216} />
           </div>
         </div>
       </div>

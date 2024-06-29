@@ -1,12 +1,11 @@
 import React from "react";
-import Vector1 from "./Vector1";
-import Vector2 from "./Vector2";
+import Image from "next/image";
 
 export default function EndSection() {
   return (
-    <div className="h-[662px]">
-      <div className="container flex justify-center items-center h-full bg-[#F7FDFF] mx-auto ">
-        <div className="w-[1240px]  py-6 px-12 flex-col flex gap-28 ">
+    <div className=" bg-[#F7FDFF]">
+      <div className="container py-24 flex justify-center items-center h-full  mx-auto ">
+        <div className="w-[1240px] px-4  py-6  flex-col flex gap-28 ">
           <div className=" space-y-6">
             <div className="italic text-4xl leading-[54px] ">
               Your <span className="text-purple">Hobby</span>, Your
@@ -17,8 +16,12 @@ export default function EndSection() {
             </button>
           </div>
           <div className="flex justify-between">
-            <Vector1 />
-            <Vector2 />
+            <Image
+              alt="Group vector"
+              src="/vector-2.png"
+              width={1240}
+              height={302}
+            />
           </div>
         </div>
       </div>
