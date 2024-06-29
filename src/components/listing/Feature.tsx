@@ -28,7 +28,7 @@ interface FeatureProps {
   description: string;
   icon: React.ReactNode;
   buttonText: string;
-  color: "#8064A2" | "#C0504D" | "#77933C" | "#8064A2";
+  color: "#8064A2" | "#C0504D" | "#77933C" | "#0096C8";
 }
 
 export default function ListingFeature(props: FeatureProps) {
